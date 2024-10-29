@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Nabla&display=swap);
+
+
+p {
+    font-family: "Nabla";
+    font-size: 10rem;
+    
+  }
+
+@font-face {
+    font-family: "Nabla";
+    src: url("Nabla.ttf") format("truetype");
+    font-display: block;  /* Prefer FOIT (Flash Of Invisible Text) over FOUT (Flash Of Unstyled Text) */
+    
+}
+
+  @font-palette-values --altone{
+    font-family: Nabla;
+    override-colors: 
+    0 #0D00FF,
+    1 #AA00AF,
+    2 #FF00F1,
+    3 #FF00F1,
+    4 #1800FF,
+    5 #0803D8,
+    6 #0000C9,
+    7 #0031FF,
+    8 #C600C6,
+    9 #FF9CFF;
+
+}
+
+.logo {
+    font-palette: --altone;
+
+    
+}
+
+
+
+.logo-1 {
+  opacity: 0%;
+  animation: opacidad 2s;
+}
+
+.logo-2 {
+  opacity: 100%;
+  animation: opacidad2 3s
+}
+
+@keyframes opacidad {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes opacidad2 {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+
+
