@@ -1,8 +1,19 @@
-
+.cuerpo{
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
 
 .container {
   position: relative;
   padding-bottom: 20px;
+  margin: auto;
+  max-width: 100%;
+  padding: 0;
 
 }
 
@@ -10,10 +21,11 @@
   width: 80px;
   height: 80px;
   background-color: black;
-  padding: 10px;
+  padding: 1px;
   margin-top: 20px;
   border-radius: 10px;
   position: relative;
+  margin-bottom: 60px;
 
 } 
 
@@ -37,9 +49,13 @@ header div div img {
 .texto-banner p{
   text-align: left;
   vertical-align: middle;
-  font-size: 1.5rem;
+  font-size: 1rem;
   min-height: 7rem;
+  padding-top: 20px;
 
+.img-fluid {
+  background-color: white;
+}
 
 }
 
@@ -75,77 +91,40 @@ header div div img {
   font-weight: 500;
 }
 
-
-
-/* Ahorro Espacio CAMBIAR CLASES*/
-
-.ahorro{
-  background-color: transparent;
-  border: 0px;
-  margin-bottom: 30px;
+.multihisense-texto {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-div .ahorro-text {
-  background-color: rgba(0 ,0 ,0 ,0);
-  border-radius: 0;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-end !important;
-  text-align: left;
-  width: 40rem;
-  bottom: 2rem;
-
-}
 
 .imagen-gif{
   clip-path: inset(100px, 20px, 20px, 20px);
 }
 
 
-/* Fin ahorro espacio */
-
-.motivos {
-  background-color:transparent;
-  border-radius: 10px;
-  margin-top: 30px;
-}
-
-div .motivos li {
-  list-style: none;
-  padding-left: 2rem;
-  background-image: url("assets/img/VICTO.png");
-  background-position: 0, 0%;
-  background-size: 1.3rem 1.3rem;
-  background-repeat: no-repeat;
-  padding-bottom: 1rem;
-  
-}
 
 
 
 
-.que-te-ofrecemos {
+/* Tarjetas Grises */
+
+
+.grey-card {
   background-color: white;
-  border-radius: 40px;
-  background-size: 5rem 10rem;
-  max-width: 400px;
-  height: 200px;
-  flex-direction: column-reverse;
-  margin: auto;
-
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.estrellas p {
-  word-spacing: 1px;
-  background-color: white;
-  text-align: center;
-  position: absolute;
-  right: 120px;
-  bottom: 80px;
-  border-radius: 10px;
-  border-color: black;
-  border-style: groove ;
-  border-width: 1px;
+.titulo-multi {
+  margin: 2rem;
 }
 
 .card-title {
@@ -158,19 +137,146 @@ div .motivos li {
   
 }
 
-.configmulti {
+.card-multi {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  margin: 0px 50px 350px 50px;
+}
+
+div .card-multi div {
+  margin: 0 0rem 2rem 0rem;
+}
+
+.card-multi img {
+  width: 150px;
+	height: 100px;
+  margin: auto;
+  margin-top: 60px;
+	object-fit: cover;
+
+}
+
+.card-multi .card {
+  border-radius: 30px;
+  background-color: #f7f7f7;
   border: 0px;
-  border-radius: 40px;
-  width: 20rem;
-  height: 20rem;
+  box-shadow: -5px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  height: 17rem;
+}
+
+.card-multi .card-body {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: white;
+  background-size: 2rem 2rem;
+  border-radius: 10px;
+  padding: 0;
   margin: 30px;
+  max-height: 50px;
+
+}
+
+.card-multi .card-body .card-text {
+  margin: auto;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+  
+
+
 
 .card-img-overlay{
   display: flex;
   flex-direction: row-reverse;
 }
-  
+
+/* FIN TARJETAS GRISES */
+
+/* Ahorro Espacio Desktop*/
+
+.ahorro{
+  background-color: #e6e6e6;
+  border: 0px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -2rem;
+
 }
+
+.ahorro .card-img{
+  max-width: 1080px;
+  margin-top: -300px;
+  align-items: end;
+  align-content: center;
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+
+div .ahorro-text {
+  background-color: rgba(0 ,0 ,0 ,0);
+  border-radius: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  text-align: left;
+  width: 40rem;
+  bottom: 2rem;
+
+}
+/* Fin ahorro espacio */
+
+/* Ahorro Espacio Mobile*/
+
+.ahorro-mobile{
+  background-color: #e6e6e6;
+  border: 0px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -2rem;
+
+}
+
+.ahorro .card-img{
+  max-width: 1080px;
+  margin-top: -300px;
+  align-items: end;
+  align-content: center;
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+
+div .ahorro-text {
+  background-color: rgba(0 ,0 ,0 ,0);
+  border-radius: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  text-align: left;
+  width: 40rem;
+  bottom: 2rem;
+
+}
+/* Fin ahorro espacio */
+  
+
 
 div .row {
   background-color: white;
@@ -204,21 +310,72 @@ div .row {
 
 .imagen-gif {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagen {
   display: flex;
-    flex-wrap: wrap;
-    
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
+
+/* QUE TE OFRECEMOS */
+
+.motivos {
+  background-color:transparent;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.motivos li {
+  list-style: none;
+  padding-left: 2rem;
+  background-image: url("/assets/img/VICTO.png");
+  background-position: 0 0%;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+  padding-bottom: 1rem;
+  
+}
+
+
+.sonido{
+  padding-bottom: 0px;
+  background-color: #f8f9fa !important;
+}
+
+.que-te-ofrecemos {
+  background-color:#f8f9fa;
+  border-radius: 40px;
+  background-size: 5rem 10rem;
+  max-width: 400px;
+  height: 232px;
+  flex-direction: column-reverse;
+  margin: auto;
+
+}
+
+.estrellas p {
+  word-spacing: 1px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  left: 290px;
+  bottom: 60px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: groove ;
+  border-width: 1px;
+}
+
+/* FIN QUE TE OFRECEMOS */
+
 
 .asesoria {
   background-color: #fff090;
