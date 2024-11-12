@@ -406,22 +406,26 @@ div .row {
   flex-wrap: wrap;
   flex-direction: row-reverse;
   align-content: center;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+  padding: 0;
 
 }
 
 
 .imagen-gif img {
   border-radius: 15px;
+
+
 }
 
 .imagen {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  padding: 0;
   
 }
 
@@ -452,9 +456,33 @@ div .row {
 }
 
 
+
+
+div div .texto {
+  max-width: 400px;
+  padding: 0;
+}
+
+div div .texto p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
 .sonido{
   padding-bottom: 0px;
   background-color: #f8f9fa !important;
+}
+
+.sonido div .texto {
+  max-width: 400px;
+}
+
+.sonido div .texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .que-te-ofrecemos {
