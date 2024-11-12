@@ -1,3 +1,27 @@
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .cuerpo{
   align-items: center;
   display: flex;
@@ -34,40 +58,64 @@ header div div img {
 
 }
 
+.container {
+  margin: auto;
+}
+
+.suministro-multi {
+  max-width: 1140px;  
+  margin: auto;
+}
 
 .texto-banner {
   right: 0;
   color: black;
+  
 }
 
 .texto-banner h1{
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 3.5rem;
   text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.texto-banner .lugar{
+  font-size: 3rem;
+}
+
+.texto-banner h1 strong {
+  color: #0b5394;
 }
 
 .texto-banner p{
   text-align: left;
+  font-family: "Roboto", sans-serif;
   vertical-align: middle;
-  font-size: 1rem;
+  font-size: 1.5rem;
   min-height: 7rem;
-  padding-top: 20px;
-
-.img-fluid {
-  background-color: white;
-}
-
 }
 
 .btn-red {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  font-weight: 700;
   background-color: #f30b46;
   border-color: #f30b46;
   color: #fff;
   text-decoration: none;
   text-align: center;
 
+}
+
+.btn-link:hover {
+  color: white;
+  text-decoration: none !important;
+}
+
+.btn-link:focus {
+  text-decoration: none;
 }
 
 .text-md-left {
@@ -79,25 +127,46 @@ header div div img {
 }
 
 
-
 .texto h1{
-  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-size: 3rem;
   font-weight: 650;
   text-align: right;
   text-align: left;
 }
 
 .texto p{
-  font-weight: 500;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+
+.multicasa{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.multihisense-img{
+  max-width: 1140px;
+  margin: auto;
 }
 
 .multihisense-texto {
-  font-size: 1.2rem;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  max-width: 1140px;
+  margin: auto;
 }
 
 
@@ -138,10 +207,10 @@ header div div img {
 }
 
 .card-multi {
-  width: 100%;
+  max-width: 1400px;
   height: 100%;
   align-content: center;
-  margin: 0px 50px 350px 50px;
+  margin: 0px 25px 350px 25px;
 }
 
 div .card-multi div {
@@ -162,7 +231,8 @@ div .card-multi div {
   background-color: #f7f7f7;
   border: 0px;
   box-shadow: -5px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  height: 17rem;
+  height: 100%;
+  max-width: 15rem;
 }
 
 .card-multi .card-body {
@@ -172,16 +242,17 @@ div .card-multi div {
   background-color: white;
   background-size: 2rem 2rem;
   border-radius: 10px;
-  padding: 0;
+  padding: 1px;
   margin: 30px;
   max-height: 50px;
 
 }
 
 .card-multi .card-body .card-text {
-  margin: auto;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 400;
 }
   
 
@@ -199,7 +270,6 @@ div .card-multi div {
 .ahorro{
   background-color: #e6e6e6;
   border: 0px;
-  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
@@ -229,25 +299,50 @@ div .ahorro-text {
   flex-direction: column !important;
   justify-content: flex-end !important;
   text-align: left;
-  width: 40rem;
-  bottom: 2rem;
+  width: 55rem;
+  margin-right: auto;
+  bottom: 5rem;
+
 
 }
+
+div .ahorro-text h1 {
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-weight: 650;
+  font-size: 3rem;
+
+}
+div .ahorro-text p {
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
 /* Fin ahorro espacio */
 
 /* Ahorro Espacio Mobile*/
 
 .ahorro-mobile{
   background-color: #e6e6e6;
-  border: 0px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  margin-top: -2rem;
+  margin-right: -20px;
 
+.ahorro-mobile .imagen {
+  padding-right: 0px !important;
+}
+
+
+}
+
+.ahorro-mobile img{
+  border-radius: 0px !important;
+}
+
+.ahorro-mobile.texto h1 p {
+  margin: auto;
+  text-align: center;
+  
 }
 
 .ahorro .card-img{
@@ -263,17 +358,7 @@ div .ahorro-text {
 }
 
 
-div .ahorro-text {
-  background-color: rgba(0 ,0 ,0 ,0);
-  border-radius: 0;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-end !important;
-  text-align: left;
-  width: 40rem;
-  bottom: 2rem;
 
-}
 /* Fin ahorro espacio */
   
 
@@ -315,6 +400,12 @@ div .row {
   align-content: center;
   justify-content: center;
   align-items: center;
+
+}
+
+
+.imagen-gif img {
+  border-radius: 15px;
 }
 
 .imagen {
@@ -323,6 +414,11 @@ div .row {
   align-content: center;
   justify-content: center;
   align-items: center;
+  
+}
+
+.imagen img { 
+  border-radius: 15px;
 }
 
 /* QUE TE OFRECEMOS */
@@ -366,8 +462,21 @@ div .row {
   background-color: white;
   text-align: center;
   position: absolute;
-  left: 290px;
+  left: 1000px;
   bottom: 60px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: groove ;
+  border-width: 1px;
+}
+
+.estrellas-mobile p {
+  word-spacing: 1px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  bottom: 300px;
   border-radius: 10px;
   border-color: black;
   border-style: groove ;
