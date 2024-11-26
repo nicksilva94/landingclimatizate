@@ -22,6 +22,14 @@
   font-style: normal;
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .cuerpo{
   align-items: center;
   display: flex;
@@ -74,7 +82,7 @@ header div div img {
 }
 
 .texto-banner h1{
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -191,6 +199,7 @@ header div div img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .grey-card div h2 {
@@ -326,7 +335,7 @@ div .ahorro-text p {
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
 }
 
 /* Fin ahorro espacio */
@@ -339,6 +348,8 @@ div .ahorro-text p {
 
 .ahorro-mobile .imagen {
   padding-right: 0px !important;
+  margin: 0px;
+  width: 100%;
 }
 
 
@@ -402,16 +413,7 @@ div .row {
   justify-content: center;
 }
 
-.imagen-gif {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  align-content: center;
-  justify-content: right;
-  align-items: center;
-  padding: 0;
 
-}
 
 
 .imagen-gif img {
