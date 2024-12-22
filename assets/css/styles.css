@@ -125,6 +125,12 @@ header div div img {
   text-decoration: none !important;
 }
 
+.btn-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .btn-link:focus {
   text-decoration: none;
 }
@@ -170,7 +176,7 @@ header div div img {
   text-align: left;
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
-  font-size: 1.375rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -200,7 +206,7 @@ header div div img {
   align-content: center;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap !important;
   width: 100%;
 }
 
@@ -228,9 +234,14 @@ header div div img {
 
 .card-multi {
   max-width: 1400px;
+  width: 100%;
   height: 100%;
   align-content: center;
   margin: 0px 25px 350px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 div .card-multi div {
@@ -337,7 +348,7 @@ div .ahorro-text p {
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 1rem;
 }
 
 /* Fin ahorro espacio */
@@ -387,11 +398,21 @@ div .ahorro-text p {
   
 
 
-div .row {
+.preguntas-frecuentes {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+}
+
+.preguntas-frecuentes .accordion .card {
+  background-color: #073763;
+  color: #fff;
+  font-weight: 300;
+  border-top: none;
+  border-bottom: rgba(355, 355, 355, .5) solid 1px;
+  border-radius: 0;
 }
 
 .configuraciones{
@@ -496,10 +517,29 @@ div div .texto p{
   font-size: 1rem;
 }
 
+.eficiencia{
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 
 .sonido{
-  padding-bottom: 0px;
   background-color: #f8f9fa !important;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .sonido div .texto {
