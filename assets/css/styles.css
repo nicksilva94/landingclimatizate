@@ -358,6 +358,7 @@ div .ahorro-text p {
 .ahorro-mobile{
   background-color: #e6e6e6;
   margin-left: -15px;
+  margin-top: -50px;
 
 .ahorro-mobile .imagen {
   padding-right: 0px !important;
