@@ -116,7 +116,7 @@ div .ahorro-text {
 div .motivos li {
   list-style: none;
   padding-left: 2rem;
-  background-image: url("assets/img/VICTO.png");
+  background-image: url("/assets/img/VICTO.png");
   background-position: 0, 0%;
   background-size: 1.3rem 1.3rem;
   background-repeat: no-repeat;
